@@ -1,0 +1,10 @@
+.fade-in {
+  animation: fade-in 1.5s forwards ease-out;
+}
+
+.bigger {
+  &:hover {
+    cursor: pointer;
+    animation: bigger 0.5s forwards ease-out;
+  }
+}

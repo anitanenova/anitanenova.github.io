@@ -1,0 +1,8 @@
+@mixin horizontal-center-absolute {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin margin-top-bottom-none {
+  margin: 0 auto;
+}

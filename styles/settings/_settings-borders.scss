@@ -1,0 +1,25 @@
+.border {
+  &--primary-50 {
+    color: $primary-50;
+
+    &--vertical {
+      border-left: dotted 12px;
+    }
+
+    &--horizontal {
+      border-top: dotted 12px;
+    }
+  }
+
+  &--secondary-100 {
+    color: $secondary-100;
+
+    &--vertical {
+      border-left: dotted 12px;
+    }
+
+    &--horizontal {
+      border-top: dotted 12px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.page-wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 75px 1fr 312px;
+
+  @include for-phone-only {
+    grid-template-rows: 72px 1fr 567px;
+  }
+
+  @include for-tablet-portrait-up {
+    grid-template-rows: 72px 1fr auto;
+  }
+
+  @include for-desktop-up {
+    grid-template-rows: 75px 1fr 312px;
+  }
+}
+
+.page-content-wrapper {
+  width: 1290px;
+  margin: 0 auto;
+
+  @include for-phone-only {
+    width: 335px;
+  }
+
+  @include for-tablet-portrait-up {
+    width: 80%;
+  }
+  @include for-tablet-landscape-up {
+    width: 80%;
+  }
+
+  @include for-desktop-up {
+    width: 1290px;
+  }
+}

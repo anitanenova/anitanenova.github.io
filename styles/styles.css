@@ -1,0 +1,632 @@
+/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in-hover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fade-in-hover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes change-color-grey-to-secondary {
+  from {
+    color: #565656;
+  }
+  to {
+    color: #ff9100;
+  }
+}
+
+@keyframes change-color-grey-to-secondary {
+  from {
+    color: #565656;
+  }
+  to {
+    color: #ff9100;
+  }
+}
+
+@-webkit-keyframes change-color-gray-200-to-primary {
+  from {
+    color: #e6e6e6;
+  }
+  to {
+    color: #41bead;
+  }
+}
+
+@keyframes change-color-gray-200-to-primary {
+  from {
+    color: #e6e6e6;
+  }
+  to {
+    color: #41bead;
+  }
+}
+
+@-webkit-keyframes bigger {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes bigger {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.border--primary-50 {
+  color: #dff4f1;
+}
+
+.border--primary-50--vertical {
+  border-left: dotted 12px;
+}
+
+.border--primary-50--horizontal {
+  border-top: dotted 12px;
+}
+
+.border--secondary-100 {
+  color: #ffecb3;
+}
+
+.border--secondary-100--vertical {
+  border-left: dotted 12px;
+}
+
+.border--secondary-100--horizontal {
+  border-top: dotted 12px;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 75px 1fr 312px;
+      grid-template-rows: 75px 1fr 312px;
+}
+
+@media (max-width: 599px) {
+  .page-wrapper {
+    -ms-grid-rows: 72px 1fr 567px;
+        grid-template-rows: 72px 1fr 567px;
+  }
+}
+
+@media (min-width: 600px) {
+  .page-wrapper {
+    -ms-grid-rows: 72px 1fr auto;
+        grid-template-rows: 72px 1fr auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-wrapper {
+    -ms-grid-rows: 75px 1fr 312px;
+        grid-template-rows: 75px 1fr 312px;
+  }
+}
+
+.page-content-wrapper {
+  width: 1290px;
+  margin: 0 auto;
+}
+
+@media (max-width: 599px) {
+  .page-content-wrapper {
+    width: 335px;
+  }
+}
+
+@media (min-width: 600px) {
+  .page-content-wrapper {
+    width: 80%;
+  }
+}
+
+@media (min-width: 900px) {
+  .page-content-wrapper {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-content-wrapper {
+    width: 1290px;
+  }
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1-like,
+.h2-like,
+.h3-like,
+.h4-like,
+.h5-like,
+.h6-like {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+.h1-like {
+  font-size: 36px;
+}
+
+.h2-like {
+  font-size: 30px;
+}
+
+.h3-like {
+  font-size: 24px;
+}
+
+.h4-like {
+  font-size: 20px;
+}
+
+.h5-like {
+  font-size: 18px;
+}
+
+.h6-like {
+  font-size: 16px;
+}
+
+h1 {
+  line-height: 44px;
+}
+
+h2 {
+  line-height: 36px;
+}
+
+h3 {
+  line-height: 30px;
+}
+
+h4 {
+  line-height: 24px;
+}
+
+h5 {
+  line-height: 22px;
+}
+
+h6 {
+  line-height: 20px;
+}
+
+.h1-like {
+  line-height: 44px;
+}
+
+.h2-like {
+  line-height: 36px;
+}
+
+.h3-like {
+  line-height: 30px;
+}
+
+.h4-like {
+  line-height: 24px;
+}
+
+.h5-like {
+  line-height: 20px;
+}
+
+.h6-like {
+  line-height: 18px;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+h6,
+.h6-like {
+  font-weight: 400;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+a,
+button {
+  font-style: normal;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+a {
+  font-weight: 600;
+}
+
+button {
+  font-weight: 800;
+}
+
+.navigation {
+  background-color: #9a5dc6;
+}
+
+.footer {
+  background-color: #9a5dc6;
+}
+
+.centered {
+  text-align: center;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.5s forwards ease-out;
+          animation: fade-in 1.5s forwards ease-out;
+}
+
+.bigger:hover {
+  cursor: pointer;
+  -webkit-animation: bigger 0.5s forwards ease-out;
+          animation: bigger 0.5s forwards ease-out;
+}
+/*# sourceMappingURL=styles.css.map */

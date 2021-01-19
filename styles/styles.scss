@@ -1,0 +1,21 @@
+@import "../styles/generic/generic-normalize";
+
+@import "../styles/settings/settings-breakpoints";
+@import "../styles/settings/settings-colors";
+@import "../styles/settings/settings-shadows";
+@import "../styles/settings/settings-animations";
+@import "../styles/settings/settings-mixins";
+@import "../styles/settings/settings-radius";
+@import "../styles/settings/settings-borders";
+
+@import "../styles/objects/objects-containers";
+@import "../styles/objects/objects-wrappers";
+
+@import "../styles/elements/elements-typography";
+
+@import "../styles/components/index/components-index-main";
+@import "../styles/components/components-navigation";
+@import "../styles/components/components-footer";
+
+@import "../styles/utilities/utilities-centered";
+@import "../styles/utilities/utilities-animations";

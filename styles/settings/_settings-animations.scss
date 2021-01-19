@@ -1,0 +1,46 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-hover {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes change-color-grey-to-secondary {
+  from {
+    color: $gray-700;
+  }
+  to {
+    color: $secondary-color;
+  }
+}
+
+@keyframes change-color-gray-200-to-primary {
+  from {
+    color: $gray-200;
+  }
+  to {
+    color: $primary-300;
+  }
+}
+
+@keyframes bigger {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
