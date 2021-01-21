@@ -6,7 +6,7 @@ Document
 /**
 Use a better box model (opinionated).
 */
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 *,
 *::before,
 *::after {
@@ -320,21 +320,21 @@ summary {
   }
 }
 
-@-webkit-keyframes change-color-gray-200-to-primary {
+@-webkit-keyframes change-background-color-white-to-primary-dark {
   from {
-    color: #e6e6e6;
+    background-color: #ffffff;
   }
   to {
-    color: #9575cd;
+    background-color: #311b92;
   }
 }
 
-@keyframes change-color-gray-200-to-primary {
+@keyframes change-background-color-white-to-primary-dark {
   from {
-    color: #e6e6e6;
+    background-color: #ffffff;
   }
   to {
-    color: #9575cd;
+    background-color: #311b92;
   }
 }
 
@@ -471,7 +471,7 @@ summary {
 }
 
 html {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1,
@@ -486,8 +486,7 @@ h6,
 .h4-like,
 .h5-like,
 .h6-like {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
+  font-family: "Saira Condensed", sans-serif;
 }
 
 h1 {
@@ -662,7 +661,7 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 50%;
+    width: 45%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -695,6 +694,12 @@ button {
   margin-bottom: 0;
   color: #ffffff;
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.index-main__about__description {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .skills {
@@ -763,6 +768,50 @@ button {
   }
 }
 
+.btn {
+  border-radius: 30px;
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  padding: 10px 22px;
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 0.5s ease-out;
+  transition: -webkit-box-shadow 0.5s ease-out;
+  transition: box-shadow 0.5s ease-out;
+  transition: box-shadow 0.5s ease-out, -webkit-box-shadow 0.5s ease-out;
+}
+
+.btn--secondary {
+  background-color: #311b92;
+  color: #ffffff;
+}
+
+.btn--outlined {
+  background-color: transparent;
+  border: 1px solid #311b92;
+  color: #311b92;
+}
+
+.btn--outlined:hover {
+  -webkit-animation: change-background-color-white-to-primary-dark 0.9s ease-in forwards;
+          animation: change-background-color-white-to-primary-dark 0.9s ease-in forwards;
+  color: #ffffff;
+}
+
+.btn--outlined--white {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
 .navbar {
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
@@ -792,32 +841,24 @@ button {
   text-decoration: none;
 }
 
-.navbar__toggler {
-  display: none;
+.navbar__send-mail {
+  padding: 15px 22px;
 }
 
-.navbar__nav {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 0;
+.navbar__send-mail:hover .navbar__send-mail__link {
+  color: #ffffff;
 }
 
-.navbar__nav__item {
-  padding: 0 8px;
-}
-
-.navbar__nav__item__link {
+.navbar__send-mail__link {
   text-decoration: none;
-  font-size: 18px;
-  text-transform: uppercase;
   color: #311b92;
+  text-transform: uppercase;
+  font-size: 16px;
   font-weight: 400;
+}
+
+.navbar__send-mail__link:hover {
+  color: #ffffff;
 }
 
 .footer {

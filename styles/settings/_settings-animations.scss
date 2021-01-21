@@ -27,12 +27,12 @@
   }
 }
 
-@keyframes change-color-gray-200-to-primary {
+@keyframes change-background-color-white-to-primary-dark {
   from {
-    color: $secondary-200;
+    background-color: $white;
   }
   to {
-    color: $primary-300;
+    background-color: $primary-900;
   }
 }
 

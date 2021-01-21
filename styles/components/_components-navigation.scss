@@ -16,27 +16,25 @@
     text-decoration: none;
   }
 
-  &__toggler {
-    display: none;
+  &__send-mail {
+    padding: 15px 22px;
+
+    &:hover {
+      .navbar__send-mail__link {
+        color: $white;
+      }
+    }
   }
 
-  &__nav {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-
-    margin: 0;
-  }
-
-  &__nav__item {
-    padding: 0 8px;
-  }
-
-  &__nav__item__link {
+  &__send-mail__link {
     text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
     color: $primary-900;
+    text-transform: uppercase;
+    font-size: 16px;
     font-weight: 400;
+
+    &:hover {
+      color: $white;
+    }
   }
 }

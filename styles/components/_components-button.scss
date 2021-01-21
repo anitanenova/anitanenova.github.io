@@ -1,0 +1,40 @@
+.btn {
+  border-radius: 30px;
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  padding: 10px 22px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+
+  &:hover {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-out;
+  }
+
+  &--secondary {
+    background-color: $primary-900;
+    color: #ffffff;
+  }
+
+  &--outlined {
+    background-color: transparent;
+    border: 1px solid $primary-900;
+    color: $primary-900;
+
+    &:hover {
+      animation: change-background-color-white-to-primary-dark 0.9s ease-in
+        forwards;
+      color: $white;
+    }
+  }
+
+  &--outlined--white {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+  }
+}

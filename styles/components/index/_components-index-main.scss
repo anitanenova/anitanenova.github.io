@@ -15,7 +15,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        width: 50%;
+        width: 45%;
         justify-content: center;
       }
     }
@@ -43,6 +43,12 @@
       margin-bottom: 0;
       color: $white;
       text-shadow: $shadow-1dp;
+    }
+
+    &__description {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
     }
   }
 }
