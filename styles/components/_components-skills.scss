@@ -1,0 +1,48 @@
+.skills {
+  position: relative;
+  .page-content-wrapper {
+    box-shadow: $primary-shadow;
+    border-radius: $primary-radius;
+    display: grid;
+
+    @include for-desktop-up {
+      grid-template-columns: 180px 1fr;
+      grid-template-rows: 120px;
+      position: relative;
+      top: -60px;
+      background-color: white;
+    }
+  }
+
+  &__title,
+  &__items__item {
+    font-weight: 400;
+  }
+
+  &__title {
+    align-self: center;
+    justify-self: center;
+  }
+
+  &__items {
+    border-left: 12px dotted $primary-100;
+
+    @include for-desktop-up {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  &__items__item {
+    &:not(:last-of-type)::after {
+      @include for-desktop-up {
+        content: "";
+        border: 2px solid $primary-50;
+        position: relative;
+        right: -60px;
+      }
+    }
+  }
+}

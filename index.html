@@ -12,14 +12,84 @@
 
 <body>
     <div class="page-wrapper">
-        <nav class="navigation">
-            <div class="page-content-wrapper">test</div>
+        <!--/ Navigation Start /-->
+        <nav class="navbar" id="mainNav">
+            <div class="page-content-wrapper">
+                <div class="navbar__logo--wrapper">
+                    <a class="navbar__logo js-scroll" href="#page-top">Anita Nenova</a>
+                    <button class="navbar__toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="navbar__nav--wrapper" id="navbarDefault">
+                    <ul class="navbar__nav">
+                        <li class="navbar__nav__item">
+                            <a class="navbar__nav__item__link js-scroll active" href="#home">About</a>
+                        </li>
+                        <li class="navbar__nav__item">
+                            <a class="navbar__nav__item__link js-scroll" href="#about">Skills</a>
+                        </li>
+                        <li class="navbar__nav__item">
+                            <a class="navbar__nav__item__link js-scroll" href="#experience">Portfolio</a>
+                        </li>
+                        <li class="navbar__nav__item">
+                            <a class="navbar__nav__item__link js-scroll" href="#things-i-do">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <main class="index-main"></main>
+        <!--/ Navigation End /-->
+
+        <!--/ Main Start /-->
+        <main class="index-main">
+            <section class="index-main__about">
+                <div class="page-content-wrapper">
+                    <img class="index-main__about__profile-picture" src="assets/images/profile-picture.jpg"
+                        alt="profile-picture">
+                    <h1 class="index-main__about__title">Hi, I’m Anita. Nice to meet you.</h1>
+                    <h5 class="index-main__about__description centered">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit.
+                        Quod voluptatibus illo exercitationem
+                        laboriosam sed. Non autem reprehenderit neque? Eveniet aliquid, accusamus rem quisquam
+                        consequuntur exercitationem explicabo voluptates ipsum corporis deserunt.</h5>
+                </div>
+            </section>
+            <section class="index-main__skills skills">
+                <div class="page-content-wrapper">
+                    <h2 class="skills__title">Skills</h2>
+                    <article class="skills__items">
+                        <h4 class="skills__items__item">
+                            React.js
+                        </h4>
+                        <h4 class="skills__items__item">
+                            JavaScript
+                        </h4>
+                        <h4 class="skills__items__item">
+                            CSS | Sass
+                        </h4>
+                        <h4 class="skills__items__item">
+                            Bootstrap
+                        </h4>
+                        <h4 class="skills__items__item">
+                            JQuery
+                        </h4>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <!--/ Main End /-->
         <footer class="footer">
 
         </footer>
     </div>
+
+    <!-- JavaScript Libraries -->
+
 </body>
 
 </html>

@@ -1,3 +1,42 @@
-.navigation {
-  background-color: $purple-400;
+.navbar {
+  box-shadow: $primary-shadow;
+  z-index: 1;
+
+  .page-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__logo {
+    font-size: 36px;
+    color: $primary-900;
+    text-decoration: none;
+  }
+
+  &__toggler {
+    display: none;
+  }
+
+  &__nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+  }
+
+  &__nav__item {
+    padding: 0 8px;
+  }
+
+  &__nav__item__link {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $primary-900;
+    font-weight: 400;
+  }
 }

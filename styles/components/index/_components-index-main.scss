@@ -1,0 +1,43 @@
+.index-main {
+  @include for-desktop-up {
+    display: grid;
+    grid-template-rows: 450px 0px 900px;
+  }
+
+  &__about {
+    display: flex;
+    align-items: center;
+    background-color: $primary-100;
+
+    .page-content-wrapper {
+      @include for-desktop-up {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 50%;
+        justify-content: center;
+      }
+    }
+
+    &__profile-picture {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: animated-border 1.5s infinite;
+
+      @include for-desktop-up {
+        grid-row: 1/2;
+        justify-self: right;
+        margin-right: 32px;
+      }
+    }
+
+    &__title,
+    &__description {
+      margin-bottom: 0;
+      color: $white;
+      text-shadow: $shadow-1dp;
+    }
+  }
+}
