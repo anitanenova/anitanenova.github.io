@@ -669,7 +669,7 @@ button {
   }
 }
 
-.index-main__about__profile-picture {
+.index-main__about__profile-picture--wrapper {
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -678,14 +678,17 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .index-main__about__profile-picture {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
+  .index-main__about__profile-picture--wrapper {
     -ms-grid-column-align: right;
         justify-self: right;
     margin-right: 32px;
   }
+}
+
+.index-main__about__profile-picture {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .index-main__about__title, .index-main__about__description {
@@ -811,7 +814,7 @@ button {
 
 .navbar__nav__item__link {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #311b92;
   font-weight: 400;

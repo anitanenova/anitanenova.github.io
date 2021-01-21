@@ -20,17 +20,22 @@
       }
     }
 
-    &__profile-picture {
+    &__profile-picture--wrapper {
       border-radius: 50%;
       width: 120px;
       height: 120px;
       animation: animated-border 1.5s infinite;
 
       @include for-desktop-up {
-        grid-row: 1/2;
         justify-self: right;
         margin-right: 32px;
       }
+    }
+
+    &__profile-picture {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
     }
 
     &__title,
