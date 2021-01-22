@@ -716,8 +716,8 @@ button {
 
 @media (min-width: 1200px) {
   .skills .page-content-wrapper {
-    -ms-grid-columns: 180px 1fr;
-        grid-template-columns: 180px 1fr;
+    -ms-grid-columns: 180px 12px 1fr;
+        grid-template-columns: 180px 12px 1fr;
     -ms-grid-rows: 120px;
         grid-template-rows: 120px;
     position: relative;
@@ -738,10 +738,6 @@ button {
       justify-self: center;
 }
 
-.skills__items {
-  border-left: 12px dotted #d1c4e9;
-}
-
 @media (min-width: 1200px) {
   .skills__items {
     display: -webkit-box;
@@ -759,12 +755,49 @@ button {
   }
 }
 
+.skills__dots {
+  position: relative;
+  top: -3px;
+}
+
+.skills__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 7px;
+  -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.14), inset 0px 3px 4px rgba(0, 0, 0, 0.12), inset 0px 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.14), inset 0px 3px 4px rgba(0, 0, 0, 0.12), inset 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.skills__dot:nth-child(1), .skills__dot:nth-child(2), .skills__dot:nth-child(3), .skills__dot:nth-child(4) {
+  background-color: #d1c4e9;
+}
+
+.skills__dot:nth-child(5), .skills__dot:nth-child(6), .skills__dot:nth-child(7) {
+  background-color: #ffffff;
+}
+
+.skills__dot:nth-child(8), .skills__dot:nth-child(9) {
+  display: none;
+}
+
+.skills__dot:first-child {
+  -webkit-box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.14), inset 0px -2px 4px rgba(0, 0, 0, 0.12), inset 0px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.14), inset 0px -2px 4px rgba(0, 0, 0, 0.12), inset 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.skills__dot:last-child {
+  -webkit-box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.14), inset 0px 3px 4px rgba(0, 0, 0, 0.12), inset 0px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.14), inset 0px 3px 4px rgba(0, 0, 0, 0.12), inset 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
 @media (min-width: 1200px) {
   .skills__items__item:not(:last-of-type)::after {
     content: "";
     border: 2px solid #ede7f6;
     position: relative;
-    right: -60px;
+    right: -75px;
   }
 }
 
