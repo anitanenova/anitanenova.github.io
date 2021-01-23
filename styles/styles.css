@@ -6,7 +6,7 @@ Document
 /**
 Use a better box model (opinionated).
 */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 *,
 *::before,
 *::after {
@@ -471,7 +471,7 @@ summary {
 }
 
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 h1,
@@ -486,7 +486,7 @@ h6,
 .h4-like,
 .h5-like,
 .h6-like {
-  font-family: "Saira Condensed", sans-serif;
+  font-family: "Bodoni Moda", serif;
 }
 
 h1 {
@@ -632,8 +632,8 @@ button {
   .index-main {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 450px 0px 900px;
-        grid-template-rows: 450px 0px 900px;
+    -ms-grid-rows: 450px 0px 1000px;
+        grid-template-rows: 450px 0px 1000px;
   }
 }
 
@@ -670,8 +670,8 @@ button {
 
 .index-main__about__profile-picture--wrapper {
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   -webkit-animation: animated-border 1.5s infinite;
           animation: animated-border 1.5s infinite;
 }
@@ -700,6 +700,142 @@ button {
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
+}
+
+.index-main__projects {
+  margin-top: 60px;
+}
+
+.index-main__projects .page-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.index-main__projects__title {
+  color: #4527a0;
+  margin: 0 auto 45px auto;
+}
+
+.index-main__projects__current--wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (min-width: 1200px) {
+  .index-main__projects__current--wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    height: 250px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    justify-items: center;
+  }
+}
+
+.index-main__projects__old--wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (min-width: 1200px) {
+  .index-main__projects__old--wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    height: 250px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    justify-items: center;
+  }
+}
+
+.index-main__projects__project--wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 250px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.index-main__projects__project__background-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.index-main__projects__project-drape {
+  position: absolute;
+  background-color: #5e35b1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.index-main__projects__project-drape:hover {
+  opacity: 0.9;
+  -webkit-transition: opacity 1.5s ease-out;
+  transition: opacity 1.5s ease-out;
+  cursor: pointer;
+}
+
+.index-main__projects__project--wrapper, .index-main__projects__project__background-image, .index-main__projects__project-drape {
+  border-radius: 12px;
+}
+
+.index-main__projects__project__link {
+  z-index: 1;
+  width: 60%;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.index-main__projects__project__link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1200px) {
+  .index-main__projects__border--horizontal {
+    display: block;
+    width: 100%;
+    margin: 60px auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .index-main__projects__border--vertical {
+    display: none;
+  }
 }
 
 .skills {
@@ -886,8 +1022,8 @@ button {
   text-decoration: none;
   color: #311b92;
   text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .navbar__send-mail__link:hover {
