@@ -5,15 +5,53 @@
   .page-content-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
     align-items: center;
     height: 100%;
+
+    @include for-phone-only {
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    @include for-tablet-portrait-up {
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 25px 0 25px;
+    }
+
+    @include for-tablet-landscape-up {
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 25px 0 25px;
+    }
+
+    @include for-desktop-up {
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1340px;
+    }
   }
 
   &__logo {
-    font-size: 36px;
     color: $primary-900;
     text-decoration: none;
+
+    @include for-phone-only {
+      font-size: 30px;
+    }
+
+    @include for-tablet-portrait-up {
+      font-size: 36px;
+    }
+
+    @include for-tablet-landscape-up {
+      font-size: 36px;
+    }
+
+    @include for-desktop-up {
+      font-size: 36px;
+    }
   }
 
   &__send-mail {

@@ -1,6 +1,18 @@
 .index-main {
+  display: grid;
+  @include for-phone-only {
+    grid-template-rows: min-content 650px 1550px;
+  }
+
+  @include for-tablet-portrait-up {
+    grid-template-rows: min-content 650px 1550px;
+  }
+
+  @include for-tablet-landscape-up {
+    grid-template-rows: min-content 0px 1650px;
+  }
+
   @include for-desktop-up {
-    display: grid;
     grid-template-rows: 450px 0px 1000px;
   }
 
@@ -10,6 +22,40 @@
     background-color: $primary-100;
 
     .page-content-wrapper {
+      @include for-phone-only {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 70%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 35px;
+      }
+
+      @include for-tablet-portrait-up {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 60%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 35px;
+      }
+
+      @include for-tablet-landscape-up {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 70%;
+        justify-content: center;
+        margin-bottom: 50px;
+      }
+
       @include for-desktop-up {
         display: flex;
         flex-direction: row;
@@ -17,6 +63,7 @@
         align-items: center;
         width: 45%;
         justify-content: center;
+        margin-bottom: 0px;
       }
     }
 
@@ -25,6 +72,11 @@
       width: 100px;
       height: 100px;
       animation: animated-border 1.5s infinite;
+
+      @include for-tablet-landscape-up {
+        justify-self: right;
+        margin-right: 32px;
+      }
 
       @include for-desktop-up {
         justify-self: right;
@@ -46,14 +98,46 @@
     }
 
     &__description {
-      font-size: 18px;
       line-height: 26px;
       font-weight: 400;
+
+      @include for-phone-only {
+        font-size: 20px;
+      }
+
+      @include for-tablet-portrait-up {
+        font-size: 20px;
+      }
+
+      @include for-tablet-landscape-up {
+        font-size: 20px;
+      }
+
+      @include for-desktop-up {
+        font-size: 18px;
+      }
     }
   }
 
   &__projects {
-    margin-top: 60px;
+    @include for-phone-only {
+      margin-top: 0px;
+      margin-bottom: 35px;
+    }
+
+    @include for-tablet-portrait-up {
+      margin-top: 0px;
+      margin-bottom: 35px;
+    }
+
+    @include for-tablet-landscape-up {
+      margin-top: 90px;
+      margin-bottom: 0px;
+    }
+
+    @include for-desktop-up {
+      margin-top: 60px;
+    }
 
     .page-content-wrapper {
       display: flex;
@@ -72,6 +156,30 @@
     &__current--wrapper {
       display: grid;
 
+      @include for-phone-only {
+        grid-template-rows: 210px 210px;
+        grid-row-gap: 25px;
+        height: min-content;
+        width: fit-content;
+        justify-items: center;
+      }
+
+      @include for-tablet-portrait-up {
+        grid-template-rows: 210px 210px;
+        grid-row-gap: 25px;
+        height: min-content;
+        width: fit-content;
+        justify-items: center;
+      }
+
+      @include for-tablet-landscape-up {
+        grid-template-rows: 210px 210px;
+        grid-row-gap: 25px;
+        height: min-content;
+        width: fit-content;
+        justify-items: center;
+      }
+
       @include for-desktop-up {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 40px;
@@ -83,6 +191,29 @@
 
     &__old--wrapper {
       display: grid;
+      @include for-phone-only {
+        grid-template-rows: 210px 210px 210px;
+        grid-row-gap: 25px;
+        height: min-content;
+        width: fit-content;
+        justify-items: center;
+      }
+
+      @include for-tablet-portrait-up {
+        grid-template-rows: 210px 210px 210px;
+        grid-row-gap: 25px;
+        height: min-content;
+        width: fit-content;
+        justify-items: center;
+      }
+
+      @include for-tablet-landscape-up {
+        grid-template-rows: 210px 210px 210px;
+        grid-row-gap: 25px;
+        height: min-content;
+        width: fit-content;
+        justify-items: center;
+      }
 
       @include for-desktop-up {
         grid-template-columns: 1fr 1fr 1fr;
@@ -146,16 +277,9 @@
     }
 
     &__border--horizontal {
-      @include for-desktop-up {
-        display: block;
-        width: 100%;
-        margin: 60px auto;
-      }
-    }
-    &__border--vertical {
-      @include for-desktop-up {
-        display: none;
-      }
+      display: block;
+      width: 100%;
+      margin: 60px auto;
     }
   }
 }
