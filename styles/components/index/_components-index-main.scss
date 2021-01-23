@@ -100,10 +100,6 @@
       max-width: 400px;
       max-height: 250px;
       color: $white;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     &__project__background-image {
@@ -114,17 +110,20 @@
     }
 
     &__project-drape {
-      position: absolute;
+      position: relative;
       background-color: $primary-600;
       width: 100%;
       height: 100%;
       z-index: 1;
       opacity: 0.6;
 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       &:hover {
         opacity: 0.9;
         transition: opacity 1.5s ease-out;
-        cursor: pointer;
       }
     }
 
