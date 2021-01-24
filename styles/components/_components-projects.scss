@@ -1,0 +1,151 @@
+.projects {
+  @include for-phone-only {
+    margin-top: 0px;
+    margin-bottom: 35px;
+  }
+
+  @include for-tablet-portrait-up {
+    margin-top: 0px;
+    margin-bottom: 35px;
+  }
+
+  @include for-tablet-landscape-up {
+    margin-top: 80px;
+    margin-bottom: 0px;
+  }
+
+  @include for-desktop-up {
+    margin-top: 60px;
+  }
+
+  .page-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__title {
+    color: $primary-800;
+    margin: 0 auto 45px auto;
+  }
+
+  &--wrapper {
+    display: flex;
+    height: min-content;
+    width: fit-content;
+    justify-items: center;
+    align-items: center;
+
+    @include for-phone-only {
+      flex-direction: column;
+    }
+
+    @include for-tablet-portrait-up {
+      flex-direction: column;
+    }
+
+    @include for-tablet-landscape-up {
+      flex-direction: column;
+    }
+
+    @include for-desktop-up {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__project--wrapper {
+    position: relative;
+
+    color: $white;
+    @include for-phone-only {
+      width: 90%;
+      height: 200px;
+    }
+
+    @include for-tablet-portrait-up {
+      width: 90%;
+      height: 200px;
+    }
+
+    @include for-tablet-landscape-up {
+      width: 400px;
+      height: 250px;
+    }
+
+    @include for-desktop-up {
+      width: 400px;
+      height: 250px;
+    }
+
+    &:nth-of-type(even) {
+      @include for-phone-only {
+        margin: 20px auto;
+      }
+
+      @include for-tablet-portrait-up {
+        margin: 20px auto;
+      }
+
+      @include for-tablet-landscape-up {
+        margin: 20px auto;
+      }
+
+      @include for-desktop-up {
+        margin: auto 40px;
+      }
+    }
+  }
+
+  &__project__background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: brightness(0.8);
+  }
+
+  &__project-drape {
+    position: relative;
+    background-color: $primary-600;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      opacity: 0.9;
+      transition: opacity 1.5s ease-out;
+    }
+  }
+
+  &__project--wrapper,
+  &__project__background-image,
+  &__project-drape {
+    border-radius: $primary-radius;
+  }
+
+  &__project__link {
+    z-index: 1;
+    width: 60%;
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__border--horizontal {
+    display: block;
+    width: 100%;
+    margin: 60px auto;
+  }
+}
